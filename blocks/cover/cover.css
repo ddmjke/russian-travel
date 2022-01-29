@@ -1,0 +1,14 @@
+.cover {
+  display: block;
+  max-width: calc(100% - 48px*2);
+  margin: 0 auto 0;
+  box-sizing: border-box;
+  padding-top: 92px;
+  position: relative;
+}
+
+@media screen and (max-width: 1025px) {
+  .cover {
+    max-width: 100%;
+  }
+}

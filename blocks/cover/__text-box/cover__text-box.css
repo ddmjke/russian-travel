@@ -1,0 +1,18 @@
+.cover__text-box {
+  position: absolute;
+  top: 55.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1025px) {
+  .cover__text-box {
+    top: 56.3%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .cover__text-box {
+    top: 58%;
+  }
+}
