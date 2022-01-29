@@ -35,6 +35,14 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .place{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+}
+
 .place:last-child {
   padding: 0;
 }

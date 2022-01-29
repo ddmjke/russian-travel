@@ -13,3 +13,13 @@
     padding-top: 86px;
   }
 }
+
+
+@media screen and (max-width: 425px) {
+  .footer {
+    margin: auto;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;    
+  }
+}
