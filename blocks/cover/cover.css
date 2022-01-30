@@ -1,14 +1,27 @@
 .cover {
-  display: block;
   max-width: calc(100% - 48px*2);
-  margin: 0 auto 0;
+  display: block;
+  margin: auto;
   box-sizing: border-box;
   padding-top: 92px;
   position: relative;
 }
 
+@media screen and (max-width: 1280px) {
+  .cover {
+    --horizontal-m: calc(48px - 48*(1280px - 100%)/(1280 - 1024));
+     max-width: calc(100% - 2*var(--horizontal-m));
+  }
+}
+
 @media screen and (max-width: 1025px) {
   .cover {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cover {
+    padding-top: 67px;
   }
 }

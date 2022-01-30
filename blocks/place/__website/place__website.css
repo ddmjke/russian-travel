@@ -4,3 +4,9 @@
   justify-content: flex-end;
   align-items: flex-start;
 }
+
+@media screen and (max-width: 425px) {
+  .place__website {
+    margin-left: 16px;
+  }
+}

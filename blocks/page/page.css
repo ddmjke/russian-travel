@@ -9,4 +9,11 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   font-family: "Inter", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 1280px) {
+  .page {
+    width: 1280px;
+  }
 }

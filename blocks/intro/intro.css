@@ -1,24 +1,35 @@
 .intro {
   margin: auto;
-  max-width: calc(100% - 148px*2);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   box-sizing: border-box;
+  margin-left: 148px;
+  width: 690px;
   padding-top: 93px;
 }
 
-@media screen and (max-width: 1025px) {
+
+
+@media screen and (max-width: 1280px) {
   .intro{
     padding-top: 92px;
-    max-width: calc(100% - 48px*2);
+    margin-left: calc(148px - 100*((1280px - 100%)/(1280 - 1024)));
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1024px) {
   .intro{
+    padding-top: 92px;
+    margin-left: calc(48px - 24*((1024px - 100%)/(1024 - 768)));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
     padding-top: 88px;
-    max-width: calc(100% - 24px*2);
+    max-width: 95%;
+    margin-left: calc(24px - 8*((768px - 100%)/(768 - 425)));
   }
 }
 
@@ -27,5 +38,6 @@
     padding-top: 64px;
     width: 288px;
     margin-left: 16px;
+    overflow: hidden;
   }
 }

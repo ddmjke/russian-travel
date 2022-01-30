@@ -9,14 +9,15 @@
   margin: 8px 0 0;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 780px) {
   .lead__caption {
-    margin-left: 24px;
+    margin: 19px 0 0 24px;
   }
 }
 
+
 @media screen and (max-width: 425px) {
   .lead__caption {
-    margin-left: 16px;
+    margin: 12px 0 0 16px;
   }
 }

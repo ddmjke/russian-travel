@@ -1,14 +1,22 @@
 .header {
   margin: 28px auto 0;
-  width: calc(100% - 2*48px);
+  max-width: calc(100% - 2*48px);
   display: flex;
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1024px) {
+  .header {
+    --horizontal-m: calc(48px - 24*((1024px - 100%)/(1024 - 768)));
+    max-width: calc(100% - 2*var(--horizontal-m));
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header {
-    width: calc(100% - 2*24px);
-  }
+    --horizontal-m: calc(24px - 8*((768px - 100%)/(768 - 425)));
+    max-width: calc(100% - 2*var(--horizontal-m));
+}
 }
 
 @media screen and (max-width: 425px) {

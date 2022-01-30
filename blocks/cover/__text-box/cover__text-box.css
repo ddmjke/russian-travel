@@ -16,3 +16,9 @@
     top: 58%;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .cover__text-box {
+    top: 63%;
+  }
+}
