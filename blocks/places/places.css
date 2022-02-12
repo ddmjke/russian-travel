@@ -16,7 +16,8 @@
   .places{
     --horizontal-m: calc(48px - 24*((1024px - 100%)/(1024 - 768)));
     max-width: calc(100% - 2*var(--horizontal-m));
-    padding-top: 88px;
+    /* ... */
+    padding-top: 92px;
   }
 }
 
@@ -24,7 +25,8 @@
   .places{
     --horizontal-m: calc(24px - 24*((768px - 100%)/(768 - 425)));
     max-width: calc(100% - 2*var(--horizontal-m));
-    padding-top: 93px;
+    /* ... */
+    padding-top: 88px;
   }
 }
 
